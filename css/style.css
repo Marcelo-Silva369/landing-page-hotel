@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #00866b;
+}
+
+:root {
+  --larguraMaxima: 1200px;
+  --btnColor: #00a181;
+  --btnHoverColor: #1b289d;
+  --fundoComodos: linear-gradient(to bottom, #004f3f, #00bd98);
+  --fundoDescricao: #c9fff4;
+  --h2Color: #004f3f;
+}
+
+/* Começo do Container do Cabeçalho */
+
+.container {
+  width: 100%;
+  max-width: var(--larguraMaxima);
+  overflow: hidden;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  background: linear-gradient(to bottom, #004f3f, #00bd98);
+  padding: 5px 2%;
+}
+
+.logo-1 img {
+  position: relative;
+  width: 150px;
+  float: left;
+  padding: 10px;
+  background: linear-gradient(to bottom, #0b9f00, #bcb300);
+  border-radius: 50px;
+}
+
+
+/* Fim do Container do Cabeçalho */
+
+/* Começo do Banner */
+
+.banner {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: var(--larguraMaxima);
+  height: 500px;
+  margin: 0 auto;
+}
+
+.banner-img {
+  background-image: url("/img/banner-hotel.webp");
+  width: 100%;
+  max-width: var(--larguraMaxima);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Fim do Banner */
+
+/* Começo do Formulário */
+
+.form-container {
+  float: right;
+  width: 350px;
+  height: 90%;
+  background-color: #003f3298;
+  box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-right: 5%;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+.form-container-text {
+  background: linear-gradient(to bottom, #00bc96, #00d5ab);
+  border-bottom: 1px solid #00a181;
+  
+ 
+}
+
+.form-container-text h2 {
+  padding: 15px;
+  color: rgb(40, 40, 40);
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.form-container-text strong {
+  text-align: center;
+  padding: 5px 10px;
+  margin-left: 2px;
+  color: rgb(238, 238, 238);
+  font-size: 11.5px;
+  font-weight: 600;
+  background-color: #009985;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.form-container form {
+  padding: 2px;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+.form-container form .form-group {
+  margin-top: 10px;
+}
+.form-container form label {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.form-container form label span {
+  color: rgb(255, 255, 255);
+  padding-right: 3px;
+  font-size: 15px;
+}
+
+.form-container form input {
+  width: 100%;
+  height: 40px;
+  background-color: #00a181ca;
+  line-height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+
+  &:focus {
+    outline: none;
+    background-color: #1b289db8;
+    color: white;
+    border-left: 4px solid rgb(205, 205, 205);
+  }
+}
+
+.form-container form input::placeholder {
+  color: #dfdfdf;
+}
+
+.form-container form button {
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: var(--btnColor);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-container form button:hover {
+  background-color: var(--btnHoverColor);
+  transform: scale(1.1);
+}
+
+.form-container form p {
+  margin-top: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+}
+
+
+/* Fim do Formulário */
+
+/* Começo da seção Chamada */
+
+.chamada {
+  background-color: #00d8ad;
+  padding: 40px 0;
+  text-align: center;
+
+  h2 {
+    color: rgb(40, 40, 40);
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  p {
+    color: rgb(75, 75, 75);
+    padding: 20px 0;
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+}
+/* Fim da seção Chamada */
+
+/* Começo da seção comodos */
+
+.container-comodos{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background: var(--fundoDescricao);
+
+}
+
+.comodo-casal{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.comodo{
+  width: 50%;
+  overflow: hidden;
+  padding: 20px 0;
+  background: var(--fundoComodos);
+}
+
+img.cama-casal{
+  margin-right: 150px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+img.cama-solteiro{
+  width: 350px;
+  margin-top: -40px;
+  margin-left: 200px;
+}
+
+.comodo-img{
+  width: 90%;
+  border-radius: 10px;
+}
+
+
+.comodo-text {
+  width: 50%;
+  padding: 0 50px;
+}
+
+.comodo-text h2 {
+  color:  var(--h2Color);
+  width: 80%;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.comodo-text p {
+  color: rgb(75, 75, 75);
+  padding: 20px 0;
+  width: 80%;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+.comodo-text p strong {
+  color: #00624f;
+}
+
+/* Fim da seção comodos */
+
+/* Começo da seção contato */
+
+footer{
+  text-align: center;
+}
+
+.contato{
+  background: linear-gradient(to bottom, #043800, #aaa200);
+  border-top: 1px solid #00a181;
+  padding: 20px 0;
+}
+
+.contato h2{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.contato p{
+  color: white;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+
+
+
+/* Começo do Media Query Responsivo (Mobile) */
+@media screen and (max-width: 500px) {
+  .logo-1 img {
+    width: 120px;
+  }
+
+  .form-container {
+    width: 95%;
+    overflow: hidden;
+    margin: 25px auto;
+    float: none;
+    justify-content: center;
+  }
+
+  .chamada {
+    text-align: center;
+  }
+
+  section.chamada h2 {
+    width: 50%;
+    font-size: 10px;
+  }
+
+  section.chamada p {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .container-comodos{
+    float: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comodo{
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+  }
+
+  img.cama-casal{
+    width: 90%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+  img.cama-solteiro{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .comodo-text{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .sala-estar{
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .comodo{
+    order: 1;
+  }
+
+  .contato{
+    width: 100%;
+    padding: 20px 0;
+  }
+  .contato h2{
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .contato p{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  
+
+  img.cama-casal{
+    width: 90%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+  img.cama-solteiro{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .comodo-text{
+    padding: 0;
+  }
+
+  .comodo-text h2{
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .comodo-text p{
+    font-size: 13px;
+  }
+} 
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  img.cama-casal{
+    width: 90%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+  img.cama-solteiro{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .comodo-text{
+    padding: 0;
+  }
+
+  .comodo-text h2{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .comodo-text p{
+    font-size: 15px;
+  }
+} 

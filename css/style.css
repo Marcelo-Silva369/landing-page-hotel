@@ -65,7 +65,7 @@ header {
 }
 
 .banner-img {
-  background-image: url("/img/banner-hotel.webp");
+  background-image: url("/img/banner-hotel.jpeg");
   width: 100%;
   max-width: var(--larguraMaxima);
   height: 500px;
